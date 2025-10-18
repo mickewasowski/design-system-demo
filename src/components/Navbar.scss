@@ -1,0 +1,10 @@
+.Navbar {
+  display: flex;
+  gap: 10px;
+  height: fit-content;
+
+  button:last-child {
+    margin-left: auto;
+  }
+
+}

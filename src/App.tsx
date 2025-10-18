@@ -1,12 +1,17 @@
-import './App.css'
-import Navbar from './components/Navbar'
+import { useTheme } from "../../ui-design-system";
+import "./App.scss";
+import { Form } from "./components/Form";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const { theme } = useTheme();
+
   return (
-  <div className='App'>
-    <Navbar />
-  </div>
-  )
+    <div className={`App ${theme}`}>
+      <Navbar />
+      <Form />
+    </div>
+  );
 }
 
-export default App
+export default App;

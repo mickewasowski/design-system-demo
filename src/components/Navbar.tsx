@@ -1,48 +1,19 @@
-import { Button, ButtonEnum } from "ui-design-system";
+import {
+  Button,
+  ButtonEnum,
+  useTheme,
+} from "ui-design-system";
+import "./Navbar.scss";
 
 function Navbar() {
-  const handleClick = () => {
-    console.log("I was clicked!");
-  };
+  const { toggle } = useTheme();
 
   return (
     <div className="Navbar">
-      <Button variant={ButtonEnum.Primary} clickHandler={handleClick}>
-        Primary Button
-      </Button>
-      <Button
-        variant={ButtonEnum.Secondary}
-        disabled={true}
-        clickHandler={handleClick}
-      >
-        Primary Button
-      </Button>
-      <Button
-        variant={ButtonEnum.Underline}
-        loading={true}
-        loader={{
-          type: "spinner",
-          mainColor: "blue",
-          subColor: "red",
-          size: 20,
-        }}
-        clickHandler={handleClick}
-      >
-        Primary Button
-      </Button>
-      <Button
-        variant={ButtonEnum.Underline}
-        loading={true}
-        loader={{
-          type: "dots",
-          size: 10,
-          mainColor: "red",
-          subColor: "yellow",
-        }}
-        clickHandler={handleClick}
-      >
-        Primary Button
-      </Button>
+      <Button variant={ButtonEnum.Underline} clickHandler={() => { }}>Button 1</Button>
+      <Button variant={ButtonEnum.Underline} clickHandler={() => {}}>Button 2</Button>
+      <Button variant={ButtonEnum.Underline} clickHandler={() => {}}>Button 3</Button>
+      <Button variant={ButtonEnum.Underline} clickHandler={toggle}>Toggle Theme</Button>
     </div>
   );
 }

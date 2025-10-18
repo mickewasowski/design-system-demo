@@ -1,0 +1,30 @@
+.dark {
+  background-color: rgb(30, 30, 30);
+  --input-wrapper-bg: rgb(30, 30, 30);
+  --input-wrapper-border: rgb(105, 105, 105);
+  --input-wrapper-focus: rgb(255, 255, 255);
+
+  // local
+  --form-heading: rgb(190, 190, 190);
+  --form-btn-underline: rgb(140, 140, 210);
+  --form-btn-underline-hover: rgb(240, 140, 210);
+  --spiner-top-border: rgb(105, 105, 105);
+  --spinner-bg: rgb(250, 250, 250);
+}
+
+.ligth {
+  background-color: rgb(255, 255, 255);
+  --input-wrapper-bg: rgb(255, 255, 255);
+  --input-wrapper-border: rgb(180, 180, 180);
+
+  // local
+  --form-heading: rgb(85, 85, 85);
+  --form-btn-underline: rgb(63, 136, 152);
+  --form-btn-underline-hover: rgb(206, 89, 0);
+  --spiner-top-border: rgb(85, 85, 85);
+  --spinner-bg: rgb(200, 200, 200);
+}
+
+.App {
+  height: 100vh;
+}
