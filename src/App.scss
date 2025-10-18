@@ -3,6 +3,10 @@
   --input-wrapper-bg: rgb(30, 30, 30);
   --input-wrapper-border: rgb(105, 105, 105);
   --input-wrapper-focus: rgb(255, 255, 255);
+  --input-text: rgb(255, 255, 255);
+  --btn-secondary-bg: transparent;
+  --btn-secondary-hover-bg: rgb(0, 150, 0);
+  --btn-primary-hover: transparent;
 
   // local
   --form-heading: rgb(190, 190, 190);
@@ -16,6 +20,7 @@
   background-color: rgb(255, 255, 255);
   --input-wrapper-bg: rgb(255, 255, 255);
   --input-wrapper-border: rgb(180, 180, 180);
+  --input-text: rgb(0, 0, 0);
 
   // local
   --form-heading: rgb(85, 85, 85);
